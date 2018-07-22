@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Udacity Front-End Web Developer Nanodegree Program | Project:  Build a Portfolio Site">
+    <meta name="author" content="Laurette Leadon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio - Laurette Leadon</title>
+</head>
+
+<!-- NOTES:  When more semantic tags were added, such as <section>, this created issues with Bootstrap styling, so they were removed. -->
+
+<body>
+    <div class="container container-body">
+
+        <header class="header-main">
+            <div class="row row-header-main">
+                <div class="col-md-3 container-logo">
+                    <img class="img-fluid img-logo" src="img/logo-ll.png" alt="LL Logo">
+                </div><!-- container-logo -->
+                <div class="col-md-9 container-title">
+                    <h1 class="header-title">Laurette Leadon</h1>
+                    <h3 class="header-subtitle">Front-End Web Developer</h3>
+                </div><!-- col container-title -->
+            </div><!-- row-header-main -->
+        </header><!-- header-main -->
+
+        <main>
+            <div class="hero-container">
+                <!-- HTML Validator found the following error on line 40:  "When the srcset attribute has any image candidate string with a width descriptor, the sizes attribute must also be present."  However, I left my code as is because Udacity's Responsive Images course shows that this format is acceptable. -->
+                <img class="img-fluid" src="img/hero-960x400.png" srcset="img/hero-375x156.png 375w, img/hero-576x240.png 576w, img/hero-768x320.png 768w, img/hero-960x400.png 960w"
+                    alt="Hero"><!-- img credit:  CC0 Creative Commons - Free for commercial use - No attribution required | pixabay.com - user: Pexels -->
+            </div><!-- hero-container -->
+
+            <div class="row row-featured-title">
+                <div class="col container-featured-title">
+                    <h2 class="featured-title">Featured Work</h2>
+                </div><!-- col container-featured-title -->
+            </div><!-- row-featured-title -->
+
+            <div class="row row-featured-item">
+
+                <div class="col-sm-6 col-md-4 featured-item">
+                    <a href="https://codepen.io/psittacine/pen/ppBJdy">
+                        <img class="img-fluid" src="img/animal-trading-card.jpg" alt="Animal Trading Card screenshot">
+                    </a>
+                    <h4 class="featured-item-title">Animal Trading Card</h4>
+                    <p class="featured-item-text">Card developed from a design prototype and customized within the limits of required criteria. Project
+                        for
+                        <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Udacity Nanodegree.</a>
+                    </p>
+                    <p class="featured-item-text">
+                        <span class="skills">Skills:</span>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </p>
+                    <p class="featured-item-text">
+                        <a href="https://codepen.io/psittacine/pen/ppBJdy">Project</a> |
+                        <a data-toggle="modal" href="#modalATCdesign">Design Mockup</a>
+                    </p>
+                </div><!-- col featured-item -->
+
+                <div class="col-sm-6 col-md-4 featured-item">
+                    <a href="https://codepen.io/psittacine/pen/PRXpLd">
+                        <img class="img-fluid" src="img/pixel-art-maker.jpg" alt="Pixel Art Maker screenshot">
+                    </a>
+                    <h4 class="featured-item-title">Pixel Art Maker</h4>
+                    <p class="featured-item-text">Single-page web app that allows users to draw pixel art on a dynamically sized grid. Features include
+                        select grid size, choose colors, draw, paint, erase, and save artwork. Project for
+                        <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Udacity Nanodegree.</a>
+                    </p>
+                    <p class="featured-item-text">
+                        <span class="skills">Skills:</span>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </p>
+                    <p class="featured-item-text">
+                        <a href="https://codepen.io/psittacine/pen/PRXpLd">Project</a> |
+                        <a data-toggle="modal" href="#modalPAMdesign">Design Mockup</a>
+                    </p>
+                </div><!-- col featured-item -->
+
+                <div class="col-sm-6 col-md-4 featured-item">
+                    <a href="https://codepen.io/psittacine/pen/RxvxvY">
+                        <img class="img-fluid" src="img/mockup-to-article.png" alt="Mockup to Article screenshot">
+                    </a>
+                    <h4 class="featured-item-title">Mockup to Article</h4>
+                    <p class="featured-item-text">Translate a PDF mockup of a web page to HTML. Project for
+                        <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Udacity Nanodegree.</a>
+                    </p>
+                    <p class="featured-item-text">
+                        <span class="skills">Skills:</span>
+                        <i class="fab fa-html5"></i>
+                    </p>
+                    <p class="featured-item-text">
+                        <a href="https://codepen.io/psittacine/pen/RxvxvY">Project</a> |
+                        <a href="https://res.cloudinary.com/psittacine/image/upload/v1526798861/Udacity/mockup-to-article-design-mockup.pdf">Design Mockup</a>
+                    </p>
+                </div><!-- col featured-item -->
+
+                <!-- Placeholders for future projects: -->
+
+                <div class="col-sm-6 col-md-4 featured-item">
+                    <a href="#">
+                        <img class="img-fluid" src="http://via.placeholder.com/600x390" alt="Project Screenshot">
+                    </a>
+                    <h4 class="featured-item-title">Project Title</h4>
+                    <p class="featured-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius orci nisi. Curabitur dignissim
+                        eu neque gravida rhoncus. Pellentesque dapibus orci et elementum placerat.</p>
+                    <p class="featured-item-text">
+                        <span class="skills">Skills:</span>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </p>
+                    <p class="featured-item-text">
+                        <a href="#">Project</a> |
+                        <a href="#">Design Mockup</a>
+                    </p>
+                </div><!-- col featured-item -->
+
+                <div class="col-sm-6 col-md-4 featured-item">
+                    <a href="#">
+                        <img class="img-fluid" src="http://via.placeholder.com/600x390" alt="Project Screenshot">
+                    </a>
+                    <h4 class="featured-item-title">Project Title</h4>
+                    <p class="featured-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius orci nisi. Curabitur dignissim
+                        eu neque gravida rhoncus. Pellentesque dapibus orci et elementum placerat.</p>
+                    <p class="featured-item-text">
+                        <span class="skills">Skills:</span>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </p>
+                    <p class="featured-item-text">
+                        <a href="#">Project</a> |
+                        <a href="#">Design Mockup</a>
+                    </p>
+                </div><!-- col featured-item -->
+
+                <div class="col-sm-6 col-md-4 featured-item">
+                    <a href="#">
+                        <img class="img-fluid" src="http://via.placeholder.com/600x390" alt="Project Screenshot">
+                    </a>
+                    <h4 class="featured-item-title">Project Title</h4>
+                    <p class="featured-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius orci nisi. Curabitur dignissim
+                        eu neque gravida rhoncus. Pellentesque dapibus orci et elementum placerat.</p>
+                    <p class="featured-item-text">
+                        <span class="skills">Skills:</span>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </p>
+                    <p class="featured-item-text">
+                        <a href="#">Project</a> |
+                        <a href="#">Design Mockup</a>
+                    </p>
+                </div><!-- col featured-item -->
+
+            </div><!-- row-featured-item -->
+        </main>
+
+        <footer class="footer-index">
+            <div class="row row-footer">
+                <div class="col-12 container-footer">
+                    <span class="footer-icon">
+                        <a href="https://github.com/psittacine">
+                            <i class="fab fa-github "></i>
+                        </a>
+                    </span>
+                </div><!-- col container-footer -->
+            </div><!-- row-footer -->
+        </footer><!-- footer-index -->
+
+    </div><!-- container container-body -->
+
+
+    <!-- MODALS -->
+
+    <!-- Modal - Animal Trading Card: Design Mockup -->
+    <div class="modal fade" id="modalATCdesign" tabindex="-1" role="dialog" aria-labelledby="modalATCdesignLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalATCdesignLabel">Animal Trading Card: Design Mockup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="https://res.cloudinary.com/psittacine/image/upload/v1516750244/design-prototype_ejp7sa.png" alt="Animal Trading Card design prototype">
+                </div>
+            </div>
+        </div>
+    </div><!-- end modal -->
+
+    <!-- Modal - Pixel Art Maker: Design Mockup -->
+    <div class="modal fade" id="modalPAMdesign" tabindex="-1" role="dialog" aria-labelledby="modalPAMdesignLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPAMdesignLabel">Pixel Art Maker: Design Mockup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="https://res.cloudinary.com/psittacine/image/upload/v1526793966/Udacity/pixel-art-maker-design-mockup.png"
+                        alt="Pixel Art Maker design prototype">
+                </div>
+            </div>
+        </div>
+    </div><!-- end modal -->
+
+
+    <!-- JavaScript for Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

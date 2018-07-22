@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Baskerville:400,400i,700');
+
+
+/* GLOBAL */
+
+body {
+    background: #0F0914; /* #0F0A15 */
+    font-family: 'Libre Baskerville', serif;
+    color: #809AE8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Great Vibes', 'Libre Baskerville', serif;
+}
+
+a:link,
+a:visited {
+    color: #AEBAD4;
+}
+
+.container-body {
+    max-width: 990px; /* 960px + 15px padding each side */
+    padding: 1.125rem 0 0;  /* 18px */
+}
+
+/*
+.modal-content {
+    background-color: #2E1850;
+}
+ */
+
+.modal-title {
+    color: #2E1850;
+}
+
+.modal-body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.header-main {
+    padding-bottom: 0.625rem; /* 10px */
+    border-bottom: 0.1875rem #2E1850 solid; /* 3px */
+    margin-bottom: 1.125rem; /* 18px */
+}
+
+.container-logo {
+    text-align: center;
+}
+
+.container-title {
+    text-align: center;
+    padding-top: 0.9375rem; /* 15px */
+}
+
+.header-title,
+.header-subtitle {
+    margin-top: 0.9375rem; /* 15px */
+}
+
+.header-title {
+    font-size: 3.5rem; /* 56px */
+}
+
+/* HERO */
+
+.hero-container {
+    text-align: center;
+}
+
+/* MAIN */
+
+.container-featured-title {
+    text-align: center;
+}
+
+.featured-title {
+    margin-top: 2.875rem; /* 46px */
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 2.5rem;
+}
+
+.featured-item-title {
+    font-family: 'Libre Baskerville', serif;
+    margin: 1rem auto;  /* 16px */
+}
+
+.featured-item {
+    text-align: center;
+    margin-bottom: 2rem;  /* 32px */
+    margin: 0 auto 3rem;  /* 48px */
+}
+
+.featured-item-text {
+    text-align: left;
+}
+
+.featured-item-title,
+.featured-item-text {
+    padding: 0 1rem;
+}
+
+.skills {
+    font-style: italic;
+}
+
+/* FOOTER */
+
+.footer-index {
+    background: #2E1850;
+    /* padding-top: 1rem; */  /* Need this if use <p> in last line of footer, which adds margin-bottom: 1rem. */
+}
+
+.container-footer {
+    text-align: center;
+    padding-top: 0.25rem; /* 4px */
+    padding-bottom: 0.25rem; /* 4px */
+}
+
+.footer-icon {
+    font-size: 3rem;  /* 48px */
+}
+
+.footer-icon>a:link,
+.footer-icon>a:visited {
+    color: #809AE8;
+}
+
+.footer-icon>a:hover,
+.footer-icon>a:focus {
+    color: #AEBAD4;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container-body {
+        padding: 3rem 0.9375rem 0; /* 48px 15px */
+    }
+    .container-logo {
+        text-align: left;
+    }
+    .container-title {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-top: 0;
+    }
+    .header-main {
+        padding-bottom: 2.125rem; /* 34px */
+        border-bottom: 0.25rem #2E1850 solid; /* 4px */
+        margin-bottom: 2.125rem; /* 34px */
+    }
+    .header-title {
+        margin-top: 0;
+        font-size: 4rem; /* 64px */
+    }
+    .container-featured-title {
+        text-align: left;
+    }
+    .featured-item-title,
+    .featured-item-text {
+        padding: 0;
+    }
+    .footer-icon {
+        font-size: 2rem;  /* 32px */
+    }
+}
